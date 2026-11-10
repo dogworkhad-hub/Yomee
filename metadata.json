@@ -1,0 +1,6 @@
+{
+  "name": "PulseLive - Global Random Video Chat & Discovery",
+  "description": "Meet and video call friends and creators worldwide with instant random 1-on-1 matching, country filters, live streams, interactive gifts, and real camera support.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

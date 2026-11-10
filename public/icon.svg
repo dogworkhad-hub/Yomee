@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background purple/violet gradient -->
+    <linearGradient id="badDaddyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7e22ce" />
+      <stop offset="50%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#fde047" />
+      <stop offset="70%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  
+  <!-- App Squircle with rounded corners -->
+  <rect width="512" height="512" rx="120" fill="url(#badDaddyBg)" />
+  
+  <!-- Subtle inner neon glow ring -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35" />
+  
+  <!-- Inner dark violet card -->
+  <rect x="56" y="100" width="400" height="312" rx="44" fill="#3b0764" opacity="0.55" />
+
+  <!-- Crown Icon on top -->
+  <g transform="translate(256, 175) scale(1.6)" filter="url(#shadow)">
+    <path d="M-28,15 L-35,-12 L-14,0 L0,-24 L14,0 L35,-12 L28,15 Z" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="2" />
+    <circle cx="-35" cy="-14" r="3" fill="#ffffff" />
+    <circle cx="0" cy="-26" r="3.5" fill="#ffffff" />
+    <circle cx="35" cy="-14" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- Bad Daddy bubble typography -->
+  <g filter="url(#shadow)" transform="translate(256, 280)">
+    <text 
+      text-anchor="middle" 
+      font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" 
+      font-weight="900" 
+      font-size="62" 
+      letter-spacing="2"
+      fill="url(#textGrad)"
+      stroke="#ffffff"
+      stroke-width="3"
+    >
+      BAD DADDY
+    </text>
+  </g>
+
+  <g transform="translate(256, 340)">
+    <rect x="-110" y="-18" width="220" height="32" rx="16" fill="#000000" opacity="0.4" />
+    <text 
+      text-anchor="middle" 
+      y="4"
+      font-family="'Plus Jakarta Sans', sans-serif" 
+      font-weight="800" 
+      font-size="16" 
+      letter-spacing="3"
+      fill="#fde047"
+    >
+      VIDEO CALL VIP
+    </text>
+  </g>
+</svg>
